@@ -22,7 +22,7 @@ let package = Package(
             name: "MyLibrary",
             dependencies: []),
         .testTarget(
-            name: "MyLibraryTests",
+            name: "BoolInitTestCase",
             dependencies: ["MyLibrary"]),
     ]
 )
