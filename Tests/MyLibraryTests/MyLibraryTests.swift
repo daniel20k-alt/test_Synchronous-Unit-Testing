@@ -27,7 +27,7 @@ final class BoolInitTestCase: XCTestCase {
         let boolFromFalseBit = try XCTUnwrap(Bool(bit: falseByte))
         XCTAssertFalse(boolFromFalseBit)
         
-        let tryVyte = data[1]
+        let trueByte = data[1]
         let boolFromTrueBit = try XCTUnwrap(Bool(bit: trueByte))
         XCTAssertTrue(boolFromTrueBit)
         

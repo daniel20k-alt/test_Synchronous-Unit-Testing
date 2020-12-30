@@ -11,8 +11,8 @@ public extension Bool {
     }
     
     init(bit: UInt8) {
-        let int = Init(bit)
-        self.initi(bit: int)!
+        let int = Int(bit)
+        self.init(bit: int)!
     }
 }
 
