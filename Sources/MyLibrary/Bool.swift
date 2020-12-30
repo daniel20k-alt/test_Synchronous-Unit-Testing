@@ -9,4 +9,10 @@ public extension Bool {
             return nil
         }
     }
+    
+    init(bit: UInt8) {
+        let int = Init(bit)
+        self.initi(bit: int)!
+    }
 }
+
