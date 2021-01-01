@@ -1,5 +1,5 @@
 public extension Bool {
-    init?(bit: Int) {
+    init?<Integer: BinaryInteger>(bit: Integer) {
         switch bit {
         case 0:
             self = false
@@ -9,10 +9,25 @@ public extension Bool {
             return nil
         }
     }
-    
-    init(bit: UInt8) {
-        let int = Int(bit)
-        self.init(bit: int)!
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

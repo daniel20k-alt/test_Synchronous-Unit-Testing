@@ -3,7 +3,7 @@ import MyLibrary
 
 final class BoolInitTestCase: XCTestCase {
     func test_validBits() throws {
-        if let boolFromTrueBit = Bool(bit: 1) {
+        if let boolFromTrueBit = Bool(bit: 1 as Int8) {
         XCTAssertTrue(boolFromTrueBit)
         } else {
             XCTFail()
@@ -15,9 +15,8 @@ final class BoolInitTestCase: XCTestCase {
     
     
     func test_invalidBits() {
-        
         XCTAssertNil( Bool(bit: -1))
-        XCTAssertNil( Bool(bit: 2))
+        XCTAssertNil( Bool(bit: 2 as UInt32))
     }
     
     func test_DataByte() throws {
@@ -33,5 +32,7 @@ final class BoolInitTestCase: XCTestCase {
         
         
         let invalidByte = data[2]
+        XCTAssertNil( Bool(bit: invalidByte))
     }
 }
+
